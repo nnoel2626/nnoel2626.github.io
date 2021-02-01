@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSCI E33A-P0</title>
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
+   <style>
+     body {
+     width: 100%;
+     margin: 0;
+       }
+     .searchForm {
+      width: 100%; 
+      }
+      h4{
+      text-align: left; 
+      font-size:14;
+      color: rgb(217,48,37); 
+      }
+      hr{
+      border-bottom: 1px solid rgb(173, 172, 172);
+      margin-bottom: 20px;
+      }
+      label{
+      text-align: left;     
+      }
+      input[type=text] {
+      display: block;
+      text-align: center; 
+      border: 1px solid #ccc;
+      border-radius: .5em;
+      font-size: 16px;  
+      padding: 10px 0px 11px 0px; 
+      justify-content: left
+      }
+      input[type=submit] {
+    color:white;
+      background-color: rgb(65,133,243);
+      }
+   </style>
+   </head>
+   <body>
+      <div class="container">
+      <h1 class='underline'>CSCI E-33A Project - 0</h1>
+      <!-- page link starts here -->
+      <div class="position-absolute top-left"> 
+         <i class="fa fa-arrow-circle-left" style="font-size:36px"></i><a href='./index.html'>Main Search page...</a>  
+      </div>
+      <div class="position-absolute top-right"> 
+         <i class="fa fa-arrow-circle-left" style="font-size:36px"></i><a href='./searchImage.html'>Search image page...</a>
+      </div>
+      <!-- page link stops here -->
+      <div class="formContainer">
+         <div class ="searchForm">
+            <h4 class='searchTitle'>Advanced Search</h4>
+            <hr>
+             <!-- input form starts-->
+            <form action="https://www.google.com/search"  method="GET" name="f">
+               <div class="mb-3 row">
+                  <label for="all these words" class="col-sm-2 col-form-label">Find pages with...</label>  
+               </div>
+               <div class="mb-3 row">
+                  <label for="all these words" class="col-sm-2 col-form-label">All these words:</label>
+                  <div class="col-sm-6">   
+                     <input class="form-control" value="" autofocus="autofocus" id="" name="as_q" type="text"
+                        placeholder="Type the important words or phrases"> 
+                  </div>
+               </div>
+               <div class="mb-3 row">
+                  <label for="all these words" class="col-sm-2 col-form-label">This exact word or phrase:</label>
+                  <div class="col-sm-6">   
+                     <input class="form-control" value="" autofocus="autofocus" id="" name="as_epq" type="text"
+                        placeholder="Type the exact word or phrase"> 
+                  </div>
+               </div>
+               <div class="mb-3 row">
+                  <label for="all these words" class="col-sm-2 col-form-label">Any of these words:</label>
+                  <div class="col-sm-6">   
+                     <input class="form-control" value="" autofocus="autofocus" id="" name="as_oq" type="text"
+                        placeholder="any of these words"> 
+                  </div>
+               </div>
+               <div class="mb-3 row">
+                  <label for="all these words" class="col-sm-2 col-form-label">None of these words:</label>
+                  <div class="col-sm-6">   
+                     <input class="form-control" value="" autofocus="autofocus" id="" name="as_eq" type="text" placeholder="none of these words"> 
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="col-sm-6"> 
+                     <input  name="tbs" type="hidden" value=""> <input  class="button" value="Advanced Search" type="submit"> 
+                  </div>
+               </div>
+         </div>
+         </form>
+          <!-- input form ends here-->
+      </div>
+   </body>
+</html>
